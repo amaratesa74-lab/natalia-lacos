@@ -58,4 +58,11 @@ footer {
   padding: 20px;
   font-size: 14px;
   color: #777;
+  .foto-produto {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 15px;
+}
 }
