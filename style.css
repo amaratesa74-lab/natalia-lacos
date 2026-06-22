@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #ffe6f0;
+  color: #333;
+}
+
+/* topo */
+.topo {
+  background: linear-gradient(135deg, #ff4da6, #ff99cc);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.topo h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.topo p {
+  margin: 10px 0 20px;
+}
+
+/* botão WhatsApp */
+.botao {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* destaque */
+.destaque {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* produtos */
+.produtos {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+}
