@@ -1,54 +1,125 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
   background: #fff7fb;
   color: #333;
 }
 
-/* TOPO */
-.topo {
+/* MENU */
+.menu {
   background: #ff4d88;
   color: white;
+  padding: 15px;
   text-align: center;
-  padding: 30px 15px;
 }
 
-.botao {
+.menu h1 {
+  margin: 0;
+}
+
+.menu nav {
+  margin-top: 10px;
+}
+
+.menu nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botao-topo {
   display: inline-block;
+  margin-top: 10px;
   background: white;
   color: #ff4d88;
-  padding: 10px 15px;
-  margin-top: 10px;
+  padding: 8px 12px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* BANNER */
+.banner {
+  text-align: center;
+  padding: 40px 20px;
+  background: #ffe0eb;
+}
+
+.banner h2 {
+  margin-bottom: 10px;
+}
+
+.botao {
+  display: inline-block;
+  background: #ff4d88;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 /* SEÇÕES */
-.destaque, .produtos {
+.secao {
   padding: 20px;
   text-align: center;
 }
 
-/* CARD */
-.card {
-  background: white;
-  margin: 15px auto;
-  padding: 15px;
-  border-radius: 10px;
-  max-width: 400px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+/* CARROSSEL */
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
 }
 
-/* ✅ IMAGEM AJUSTADA (AQUI ESTÁ A CORREÇÃO) */
-.foto-produto {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  display: block;
-  margin: 10px auto;
+.carrossel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carrossel::-webkit-scrollbar-thumb {
+  background: #ff4d88;
   border-radius: 10px;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* CARD */
+.card-produto {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  min-width: 250px;
+  max-width: 280px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  scroll-snap-align: center;
+}
+
+/* IMAGEM */
+.card-produto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* PREÇO */
+.preco {
+  font-weight: bold;
+  color: #ff4d88;
+}
+
+/* BOTÃO */
+.card-produto .botao {
+  width: 100%;
+  text-align: center;
 }
 
 /* RODAPÉ */
@@ -63,3 +134,11 @@ footer a {
   color: white;
   text-decoration: underline;
 }
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .menu nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+  }
